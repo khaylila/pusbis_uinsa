@@ -4,9 +4,13 @@
     "description": "CodeIgniter4 starter app",
     "homepage": "https://codeigniter.com",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": "^7.4 || ^8.0",
-        "codeigniter4/codeigniter4": "dev-develop"
+        "codeigniter4/framework": "^4.0",
+        "codeigniter4/shield": "dev-develop",
+        "datamweb/shield-oauth": "dev-develop"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
@@ -33,13 +37,5 @@
         "forum": "https://forum.codeigniter.com/",
         "source": "https://github.com/codeigniter4/CodeIgniter4",
         "slack": "https://codeigniterchat.slack.com"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/codeigniter4/codeigniter4"
-        }
-    ]
+    }
 }

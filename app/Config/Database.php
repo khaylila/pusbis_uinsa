@@ -44,6 +44,46 @@ class Database extends Config
         'port'     => 3306,
     ];
 
+    public array $location = [
+        'DSN'      => '',
+        'hostname' => '127.0.0.1',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'location_api',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => '',
+        'pConnect' => false,
+        'DBDebug'  => true,
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 3306,
+    ];
+
+    public array $postalCode = [
+        'DSN'      => '',
+        'hostname' => '127.0.0.1',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'postelcode_api',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => '',
+        'pConnect' => false,
+        'DBDebug'  => true,
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 3306,
+    ];
+
     /**
      * This database connection is used when
      * running PHPUnit database tests.

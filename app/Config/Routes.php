@@ -2,6 +2,12 @@
 
 namespace Config;
 
+use App\Controllers\Auth\LoginController;
+use App\Controllers\Auth\RegisterController;
+use App\Controllers\Api\LocationController;
+use App\Controllers\Auth\OAuthController;
+use App\Controllers\DashboardController;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -29,7 +35,31 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+// auth
+$routes->get('login', [LoginController::class, 'loginView']);
+$routes->post('login', [LoginController::class, 'loginAct']);
+$routes->get('register', [RegisterController::class, 'registerView']);
+$routes->post('register', [RegisterController::class, 'registerAct']);
+
+$routes->group('oauth', static function ($routes): void {
+    $routes->addPlaceholder('allOAuthList', service('ShieldOAuth')->allOAuth());
+    $routes->get('(:allOAuthList)', [OAuthController::class, 'redirectOAuth/$1']);
+
+    $routes->get(config('ShieldOAuthConfig')->call_back_route, [OAuthController::class, 'callBack']);
+});
+
 $routes->get('/', 'Home::index');
+$routes->get('/dashboard', [DashboardController::class, "index"]);
+
+$routes->group('api', static function ($routes) {
+    $routes->get('provinces', [LocationController::class, 'listAllProvinces']);
+    $routes->get('regencies/(:num)', [LocationController::class, 'listAllRegencies/$1']);
+    $routes->get('districts/(:num)', [LocationController::class, 'listAllDistricts/$1']);
+    $routes->get('urbans/(:num)', [LocationController::class, 'listAllUrbans/$1']);
+});
+
+service('auth')->routes($routes, ['except' => ['login', 'register']]);
 
 /*
  * --------------------------------------------------------------------

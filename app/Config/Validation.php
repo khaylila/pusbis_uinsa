@@ -41,4 +41,37 @@ class Validation extends BaseConfig
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------
+    public array $registration = [
+        'first_name' => [
+            'rules' => 'required|alpha_space|min_length[3]|max_length[128]',
+        ],
+        'last_name' => [
+            'rules' => 'required|alpha_space|min_length[3]|max_length[128]',
+        ],
+        'username' => [
+            'rules' => 'required|alpha_numeric|min_length[4]|max_length[30]|is_unique[users.username]',
+        ],
+        'phone' => [
+            'rules' => 'required|numeric|min_length[7]|max_length[20]|is_unique[users.phone_number]',
+        ],
+        'email' => [
+            'rules' => 'required|valid_email|min_length[8]|max_length[128]|is_unique[auth_identities.secret]',
+        ],
+        'province' => [
+            'rules' => 'required'
+        ],
+        'city' => [
+            'rules' => 'required'
+        ],
+        'regency' => [
+            'rules' => 'required'
+        ],
+        'district' => [
+            'rules' => 'required'
+        ],
+        'address' => [
+            'rules' => 'required|max_length[400]'
+        ],
+        'agree' => 'required',
+    ];
 }
