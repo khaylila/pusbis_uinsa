@@ -40,70 +40,119 @@
       .rounded-bottom-right-1 {
         border-bottom-right-radius: 0.375rem;
       }
+
+      .form-feedback {
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.5rem 0.6rem;
+        font-size: 1.5rem;
+      }
+
+      .btn-feedback {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        background-color: #048853;
+        color: white;
+        border: none;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .btn-feedback:hover {
+        background-color: #037045;
+      }
+      .instagram-link:hover {
+        color: #d62976 !important;
+      }
+      .twitter-link:hover {
+        color: #1da1f2 !important;
+      }
+      .facebook-link:hover {
+        color: #3b5998 !important;
+      }
+      .m-testimoni-card {
+        margin-bottom: 1rem;
+      }
+      @media (max-width: 575.98px) {
+        .m-testimoni-card {
+          margin-bottom: 6rem;
+        }
+        .m-testimoni-card:last-child {
+          margin-bottom: 1rem;
+        }
+      }
+      section {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+      #contact {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+      }
     </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold" href="#">
-            <img
-              src="https://source.unsplash.com/50x50"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            Pusat Bisnis UINSA
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
-                  >Beranda</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Layanan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Fitur</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kontak</a>
-              </li>
-            </ul>
-            <hr class="d-lg-none" />
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link btn btn-secondary mb-1 text-white px-3 py-2 me-lg-1"
-                  href="#"
-                  >Daftar</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link btn btn-success text-white fw-semibold px-3 py-2"
-                  href="#"
-                  >Masuk</a
-                >
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+          <img
+            src="img/uinsa-logo.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Pusat Bisnis UINSA
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feature">Fitur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+          <hr class="d-lg-none" />
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-secondary mb-1 text-white px-3 py-2 me-lg-1"
+                href="/register"
+                >Daftar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-success text-white fw-semibold px-3 py-2"
+                href="/login"
+                >Masuk</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <header>
       <section
         id="beranda"
         style="height: 100vh"
@@ -161,7 +210,7 @@
       </section>
     </header>
     <main>
-      <section id="services" class="p-5" style="background-color: #e2fdf1">
+      <section id="services" class="px-5" style="background-color: #e2fdf1">
         <div class="row text-center mb-3">
           <div class="col">
             <h1 class="text-success">Layanan Kami</h1>
@@ -281,7 +330,7 @@
           alt=""
         />
         <div
-          class="container p-5 text-white d-flex align-items-center justify-content-center"
+          class="container px-5 text-white d-flex align-items-center justify-content-center"
           style="z-index: 2"
         >
           <div class="text-center">
@@ -429,7 +478,7 @@
 
       <section
         id="services"
-        class="p-5 min-vh-100"
+        class="px-5 min-vh-100"
         style="background-color: #e2fdf1"
       >
         <div class="container">
@@ -439,7 +488,7 @@
             </div>
           </div>
           <div class="row justify-content-center" style="padding-top: 6rem">
-            <div class="col-lg-3" style="margin-bottom: 6rem">
+            <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
                 style="width: 13rem; border-radius: 2rem"
@@ -470,7 +519,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" style="margin-bottom: 6rem">
+            <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
                 style="width: 13rem; border-radius: 2rem"
@@ -501,7 +550,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" style="margin-bottom: 6rem">
+            <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
                 style="width: 13rem; border-radius: 2rem"
@@ -532,7 +581,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3" style="margin-bottom: 6rem">
+            <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
                 style="width: 13rem; border-radius: 2rem"
@@ -566,6 +615,295 @@
           </div>
         </div>
       </section>
+
+      <section class="px-5" id="feature" style="background-color: #e2fdf1">
+        <div class="container">
+          <div class="row justify-content-between mb-3">
+            <div class="col-lg-4"><h1>Fitur Layanan</h1></div>
+            <div class="col-lg-3 text-lg-end">
+              <a href="#" class="btn btn-success px-3"
+                >Lihat Semua <i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carouselExampleAutoplaying"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev display-1"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev"
+                >
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="carousel-control-next display-1"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next"
+                >
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="bg-secondary"
+        style="
+          background-image: url('img/twinTower.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div
+          style="
+            background-color: #000000d0;
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+          "
+        >
+          <div class="container">
+            <div class="row align-items-center text-white">
+              <div class="col-lg-6 mb-3">
+                <h1 class="fw-bold display-4 mb-3">
+                  Butuh Konsultasi? Silahkan kontak kami, kami siap membantu
+                </h1>
+                <h4 class="fw-bold">Kontak</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-1">
+                    <i class="fa-solid fa-building"></i> Gedung twin towers B
+                    Lt.1 UIN Sunan Ampel Surabaya
+                  </li>
+                  <li class="mb-1">
+                    <i class="fa-solid fa-phone"></i> (031) 8410298
+                  </li>
+                  <li class="mb-1">
+                    <i class="fa-solid fa-envelope"></i> pusbis@uinsby.ac.id
+                  </li>
+                </ul>
+
+                <h4 class="fw-bold">Social Media</h4>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a
+                      href="https://www.facebook.com/UINSAOfficial/"
+                      class="text-white facebook-link"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="https://twitter.com/UINSAOfficial"
+                      class="text-white twitter-link"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="https://www.instagram.com/uinsa.official/"
+                      class="text-white instagram-link"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li class="list-inline-item">@uinsa.official</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 mb-3 text-center">
+                <h1>ada pertanyaan..?</h1>
+                <form action="/send-feedback" method="POST">
+                  <input
+                    class="form-feedback"
+                    type="text"
+                    placeholder="Masukkan email anda disini..."
+                  />
+                  <input
+                    class="form-feedback"
+                    type="text"
+                    placeholder="Pertanyaan anda..."
+                  />
+                  <button type="submit" class="btn-feedback">Kirim</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center pt-2 pb-4 bg-black">
+        <small class="text-white"
+          >Copyright &copy; 2023
+          <a class="text-white" href="https://pusbis.uinsa.ac.id"
+            >Pusbis UINSA</a
+          >. All Right Reserved.</small
+        >
+      </footer>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
