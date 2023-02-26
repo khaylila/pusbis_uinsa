@@ -32,7 +32,18 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
-            'session' => ['except' => ['/', 'login*', 'register', 'auth/a/*', 'oauth*', 'api/*']],
+            'session' => [
+                'except' => [
+                    '/',
+                    'login*',
+                    'register',
+                    'forgot-password',
+                    // 'reset-password',
+                    // 'auth/a/*',
+                    'oauth*',
+                    'api/*',
+                ]
+            ],
         ],
         'after' => [
             'toolbar',
@@ -64,7 +75,9 @@ class Filters extends BaseConfig
     public array $filters = [
         'auth-rates' => [
             'before' => [
-                'login*', 'register', 'auth/*'
+                'login*',
+                'register',
+                'auth/*'
             ]
         ]
     ];

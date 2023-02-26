@@ -5,8 +5,10 @@ namespace Config;
 use App\Controllers\Auth\LoginController;
 use App\Controllers\Auth\RegisterController;
 use App\Controllers\Api\LocationController;
+use App\Controllers\Auth\MagicLinkController;
 use App\Controllers\Auth\OAuthController;
 use App\Controllers\DashboardController;
+use App\Controllers\Home;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
@@ -41,6 +43,8 @@ $routes->get('login', [LoginController::class, 'loginView']);
 $routes->post('login', [LoginController::class, 'loginAct']);
 $routes->get('register', [RegisterController::class, 'registerView']);
 $routes->post('register', [RegisterController::class, 'registerAct']);
+$routes->get('forgot-password', [MagicLinkController::class, 'forgotPasswordView']);
+$routes->post('forgot-password', [MagicLinkController::class, 'forgetAct']);
 
 $routes->group('oauth', static function ($routes): void {
     $routes->addPlaceholder('allOAuthList', service('ShieldOAuth')->allOAuth());
@@ -50,7 +54,8 @@ $routes->group('oauth', static function ($routes): void {
 });
 
 $routes->get('/', 'Home::index');
-$routes->get('/dashboard', [DashboardController::class, "index"]);
+
+$routes->get('/main-menu', [Home::class, "mainMenu"]);
 
 $routes->group('api', static function ($routes) {
     $routes->get('provinces', [LocationController::class, 'listAllProvinces']);
@@ -59,7 +64,19 @@ $routes->group('api', static function ($routes) {
     $routes->get('urbans/(:num)', [LocationController::class, 'listAllUrbans/$1']);
 });
 
-service('auth')->routes($routes, ['except' => ['login', 'register']]);
+if (service('auth')->loggedIn()) {
+    if (auth()->user()->inGroup('superadmin')) {
+        $routes->get('/dashboard', [DashboardController::class, "superAdminDashboard"], ['filter' => 'group:superadmin']);
+    } elseif (auth()->user()->inGroup('seller')) {
+        $routes->get('/dashboard', [DashboardController::class, "sellerDashboard"], ['filter' => 'permission:storeSeller.access']);
+    } else {
+        $routes->get('/dashboard', [DashboardController::class, "index"]);
+    }
+} else {
+    $routes->get('/dashboard', [DashboardController::class, "index"]);
+}
+
+service('auth')->routes($routes, ['except' => ['login', 'register', 'login/magic-link',]]);
 
 /*
  * --------------------------------------------------------------------

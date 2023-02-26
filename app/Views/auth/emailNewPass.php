@@ -1,5 +1,5 @@
 <p>
-    Pusbis Client Account
+    Pusbis Client Reset Password
     <br>
     email: <?= $email; ?>
     <br>
