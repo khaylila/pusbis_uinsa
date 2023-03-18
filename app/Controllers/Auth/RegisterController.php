@@ -138,7 +138,7 @@ class RegisterController extends ShieldRegisterController
         try {
             $users->save($user);
         } catch (ValidationException $e) {
-            log_message('errors', json_encode($users->errors()));
+            log_message('error', json_encode($users->errors()));
             return $this->failServerError();
         }
 
@@ -171,7 +171,7 @@ class RegisterController extends ShieldRegisterController
             try {
                 $users->delete($userID, true);
             } catch (ValidationException $e) {
-                log_message('errors', json_encode($users->errors()));
+                log_message('error', json_encode($users->errors()));
             }
             return $this->respond(['status' => 'server_error', 'messages' => 'Unable to send email!'], 500);
         }

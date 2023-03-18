@@ -103,6 +103,9 @@ $(document).ready(function () {
     reqData(baseURL + "register", {
       method: "POST",
       data: formData,
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
     })
       .then((result) => {
         $(".is-invalid").removeClass("is-invalid");

@@ -49,7 +49,7 @@
                     <a href="/"><span class="fas fa-arrow-left"></span> Back</a>
                 </div>
                 <div class="simple-footer">
-                    Copyright <?= date('Y'); ?> &copy; <a href="https://pusbis.uinsa.ac.id">Pusbis UINSA SBY</a>
+                    Copyright <?= date('Y'); ?> &copy; <a href="https://pusbis.uinsa.ac.id">Pusat Bisnis UINSA</a>
                 </div>
             </div>
         </section>

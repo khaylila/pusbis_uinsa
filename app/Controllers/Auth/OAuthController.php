@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace App\Controllers\Auth;
 
+use App\Models\OwnUserModel;
 use CodeIgniter\Shield\Entities\User;
 use Datamweb\ShieldOAuth\Controllers\OAuthController as ShieldOauth;
 
@@ -81,7 +82,7 @@ class OAuthController extends ShieldOauth
 
         if ($this->checkExistenceUser($find) === false) {
             helper('text');
-            $users = model('ShieldOAuthModel');
+            $users = model(OwnUserModel::class);
             // new user
             $entitiesUser = new User($oauthClass->getColumnsName('newUser', $userInfo));
 
@@ -121,7 +122,7 @@ class OAuthController extends ShieldOauth
 
     private function checkExistenceUser(array $find = []): bool
     {
-        $users = model('OwnUserModel');
+        $users = model(OwnUserModel::class);
         // $find = ['email' => $this->userInfo()->email];
         $findUser = $users->findByCredentials($find);
 
@@ -130,7 +131,7 @@ class OAuthController extends ShieldOauth
 
     private function syncingUserInfo(array $find = [], array $updateFildes = []): int
     {
-        $users = model('OwnUserModel');
+        $users = model(OwnUserModel::class);
         $user  = $users->findByCredentials($find);
 
         $syncingUserInfo = config('ShieldOAuthConfig')->syncingUserInfo;

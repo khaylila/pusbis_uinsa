@@ -9,6 +9,9 @@ $(document).ready(function () {
     reqData($(this).prop("action"), {
       method: "POST",
       data: formData,
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
     })
       .then((result) => {
         console.log(result);

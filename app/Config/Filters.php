@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Filters\GroupFilter;
+use App\Filters\IsAjax;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -21,6 +23,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'own-group'     => GroupFilter::class,
+        'is-ajax'       => IsAjax::class,
     ];
 
     /**
@@ -32,8 +36,11 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            'is-ajax',
             'session' => [
                 'except' => [
+                    'mikhmon',
+                    'telegram',
                     '/',
                     'login*',
                     'register',

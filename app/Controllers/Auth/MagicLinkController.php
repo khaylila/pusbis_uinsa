@@ -65,7 +65,7 @@ class MagicLinkController extends ShieldMagicLinkController
         try {
             $users->save($user);
         } catch (ValidationException $e) {
-            log_message('errors', json_encode($users->errors()));
+            log_message('error', json_encode($users->errors()));
             return $this->failServerError();
         }
 
