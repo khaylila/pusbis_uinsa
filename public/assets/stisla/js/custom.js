@@ -28,6 +28,18 @@ async function reqData(url = "", data = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-// postData("https://example.com/answer", { answer: 42 }).then((data) => {
-//   console.log(data); // JSON data parsed by `data.json()` call
-// });
+$('#logout').click(function(e){
+  e.preventDefault();
+  Swal.fire({
+    title: 'Are you sure?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
+    confirmButtonText: 'Log out'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.replace("/logout");
+    }
+  })
+});

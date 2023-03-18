@@ -121,7 +121,7 @@ class OAuthController extends ShieldOauth
 
     private function checkExistenceUser(array $find = []): bool
     {
-        $users = model('ShieldOAuthModel');
+        $users = model('OwnUserModel');
         // $find = ['email' => $this->userInfo()->email];
         $findUser = $users->findByCredentials($find);
 
@@ -130,7 +130,7 @@ class OAuthController extends ShieldOauth
 
     private function syncingUserInfo(array $find = [], array $updateFildes = []): int
     {
-        $users = model('ShieldOAuthModel');
+        $users = model('OwnUserModel');
         $user  = $users->findByCredentials($find);
 
         $syncingUserInfo = config('ShieldOAuthConfig')->syncingUserInfo;

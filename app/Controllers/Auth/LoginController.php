@@ -30,7 +30,8 @@ class LoginController extends ShieldLoginController
         }
 
         return $this->view('auth/login', [
-            'title' => 'Login'
+            'title' => 'Login',
+            'scripts' => ["./js/login.js"],
         ]);
     }
     /**

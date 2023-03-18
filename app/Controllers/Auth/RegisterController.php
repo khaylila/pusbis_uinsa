@@ -46,7 +46,8 @@ class RegisterController extends ShieldRegisterController
         }
 
         return $this->view('auth/register', [
-            'title' => 'Register'
+            'title' => 'Register',
+            'scripts' => ["./js/register.js"],
         ]);
     }
 
@@ -56,20 +57,22 @@ class RegisterController extends ShieldRegisterController
 
     private function generatePassword($length = 16)
     {
-        $alpha = "qwertyuiopasdfghjklzxcvbnm";
-        $alphaCap = "QWERTYUIOPASDFGHJKLZXCVBNM";
-        $num = '1234567890';
-        $password = '';
-        for ($i = 0; $i < $length; $i++) {
-            $rand = rand(1, 10);
-            if ($rand % 3 == 0) {
-                $password .= $alpha[rand(0, strlen($alpha) - 1)];
-            } else if ($rand % 3 == 2) {
-                $password .= $alphaCap[rand(0, strlen($alphaCap) - 1)];
-            } else {
-                $password .= $num[rand(0, strlen($num) - 1)];
-            }
-        }
+        // $alpha = "qwertyuiopasdfghjklzxcvbnm";
+        // $alphaCap = "QWERTYUIOPASDFGHJKLZXCVBNM";
+        // $num = '1234567890';
+        // $password = '';
+        // for ($i = 0; $i < $length; $i++) {
+        //     $rand = rand(1, 10);
+        //     if ($rand % 3 == 0) {
+        //         $password .= $alpha[rand(0, strlen($alpha) - 1)];
+        //     } else if ($rand % 3 == 2) {
+        //         $password .= $alphaCap[rand(0, strlen($alphaCap) - 1)];
+        //     } else {
+        //         $password .= $num[rand(0, strlen($num) - 1)];
+        //     }
+        // }
+        helper('text');
+        $password = random_string('alnum', $length);
 
         return $password;
     }
