@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" id="home">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pusat Bisnis UINSA</title>
+
+    <!-- Boostrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer">
+
+    <!-- CSS -->
     <style>
       .bg-green {
         background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -90,8 +92,11 @@
         padding-bottom: 0rem;
       }
     </style>
+
   </head>
   <body>
+
+  <!-- Navbar Section -->
     <nav class="navbar sticky-top navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="#">
@@ -100,8 +105,7 @@
             alt="Logo"
             width="30"
             height="24"
-            class="d-inline-block align-text-top"
-          />
+            class="d-inline-block align-text-top">
           Pusat Bisnis UINSA
         </a>
         <button
@@ -111,16 +115,13 @@
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Beranda</a
-              >
+              <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">Layanan</a>
@@ -137,41 +138,36 @@
             <li class="nav-item">
               <a
                 class="nav-link btn btn-secondary mb-1 text-white px-3 py-2 me-lg-1"
-                href="/register"
-                >Daftar</a
-              >
+                href="/register">Daftar</a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link btn btn-success text-white fw-semibold px-3 py-2"
-                href="/login"
-                >Masuk</a
-              >
+                href="/login">Masuk</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- EndNavbar Section -->
+    
+    <!-- Header Section -->
     <header>
       <section
         id="beranda"
         style="height: 100vh"
-        class="overflow-hidden bg-green position-relative d-lg-flex align-items-center"
-      >
+        class="overflow-hidden bg-green position-relative d-lg-flex align-items-center">
         <img
           src="img/image1.png"
           class="position-absolute bottom-0 end-0 d-none d-lg-block"
-          alt=""
-        />
+          alt="">
         <img
           src="img/image2.png"
           class="position-absolute top-0 start-0"
-          alt=""
-        />
+          alt="">
         <div
           class="position-absolute d-none d-lg-block text-center text-white px-5 w-50"
-          style="z-index: 10"
-        >
+          style="z-index: 10">
           <h1 class="display-3 fw-bold">Membantu Temukan Kebutuhan Terbaik</h1>
           <p class="fs-6">
             <span class="fw-bold">Pusat bisnis</span> hadir untuk temukan
@@ -180,8 +176,7 @@
           </p>
           <button
             type="button"
-            class="fw-bold text-success btn btn-light text-success fs-3"
-          >
+            class="fw-bold text-success btn btn-light text-success fs-3">
             Temukan Kebutuhan <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
@@ -189,12 +184,10 @@
           src="img/image1.png"
           class="position-absolute bottom-0 end-0 d-lg-none w-100"
           style="z-index: 1"
-          alt=""
-        />
+          alt="">
         <div
           class="position-absolute d-lg-none text-center text-white px-5"
-          style="z-index: 10"
-        >
+          style="z-index: 10">
           <h1 class="display-2 fw-bold mt-5">
             Membantu Temukan Kebutuhan Terbaik
           </h1>
@@ -209,7 +202,11 @@
         </div>
       </section>
     </header>
+    <!-- EndHeader Section -->
+
+    <!-- Main Section -->
     <main>
+      <!-- Layanan Section -->
       <section id="services" class="px-5" style="background-color: #e2fdf1">
         <div class="row text-center mb-3">
           <div class="col">
@@ -223,8 +220,7 @@
               <div class="card-body text-center">
                 <div
                   style="width: 3rem; height: 3rem"
-                  class="overflow-hidden bg-success rounded-circle mx-auto"
-                >
+                  class="overflow-hidden bg-success rounded-circle mx-auto">
                   <img src="img/house.png" alt="" class="w-100" />
                 </div>
                 <h5 class="card-title text-success">Property Management</h5>
@@ -242,8 +238,7 @@
               <div class="card-body text-center">
                 <div
                   style="width: 3rem; height: 3rem"
-                  class="overflow-hidden bg-success rounded-circle mx-auto"
-                >
+                  class="overflow-hidden bg-success rounded-circle mx-auto">
                   <img src="img/house.png" alt="" class="w-100" />
                 </div>
                 <h5 class="card-title text-success">Property Management</h5>
@@ -261,8 +256,7 @@
               <div class="card-body text-center">
                 <div
                   style="width: 3rem; height: 3rem"
-                  class="overflow-hidden bg-success rounded-circle mx-auto"
-                >
+                  class="overflow-hidden bg-success rounded-circle mx-auto">
                   <img src="img/house.png" alt="" class="w-100" />
                 </div>
                 <h5 class="card-title text-success">Property Management</h5>
@@ -282,8 +276,7 @@
               <div class="card-body text-center">
                 <div
                   style="width: 3rem; height: 3rem"
-                  class="overflow-hidden bg-success rounded-circle mx-auto"
-                >
+                  class="overflow-hidden bg-success rounded-circle mx-auto">
                   <img src="img/house.png" alt="" class="w-100" />
                 </div>
                 <h5 class="card-title text-success">Property Management</h5>
@@ -301,8 +294,7 @@
               <div class="card-body text-center">
                 <div
                   style="width: 3rem; height: 3rem"
-                  class="overflow-hidden bg-success rounded-circle mx-auto"
-                >
+                  class="overflow-hidden bg-success rounded-circle mx-auto">
                   <img src="img/house.png" alt="" class="w-100" />
                 </div>
                 <h5 class="card-title text-success">Property Management</h5>
@@ -317,22 +309,21 @@
           </div>
         </div>
       </section>
+      <!-- EndLayanan Section -->
 
+      <!-- Search Section -->
       <section
         id="findSomething"
         style="height: 100vh"
-        class="overflow-hidden bg-green position-relative d-flex"
-      >
+        class="overflow-hidden bg-green position-relative d-flex">
         <img
           src="img/image2.png"
           class="position-absolute top-0 start-0"
           style="z-index: 1"
-          alt=""
-        />
+          alt="">
         <div
           class="container px-5 text-white d-flex align-items-center justify-content-center"
-          style="z-index: 2"
-        >
+          style="z-index: 2">
           <div class="text-center">
             <h1 class="fs-1">Temukan Kebutuhan Terbaik</h1>
             <p class="px-lg-5 mb-3">
@@ -342,8 +333,7 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li
                 class="nav-item bg-gray rounded-top-left-1"
-                role="presentation"
-              >
+                role="presentation">
                 <button
                   class="nav-link active text-success"
                   id="home-tab"
@@ -352,8 +342,7 @@
                   type="button"
                   role="tab"
                   aria-controls="home-tab-pane"
-                  aria-selected="true"
-                >
+                  aria-selected="true">
                   Cari
                 </button>
               </li>
@@ -366,15 +355,13 @@
                   type="button"
                   role="tab"
                   aria-controls="profile-tab-pane"
-                  aria-selected="false"
-                >
+                  aria-selected="false">
                   Toko
                 </button>
               </li>
               <li
                 class="nav-item bg-gray rounded-top-right-1"
-                role="presentation"
-              >
+                role="presentation">
                 <button
                   class="nav-link text-dark"
                   id="contact-tab"
@@ -383,8 +370,7 @@
                   type="button"
                   role="tab"
                   aria-controls="contact-tab-pane"
-                  aria-selected="false"
-                >
+                  aria-selected="false">
                   Layanan
                 </button>
               </li>
@@ -395,16 +381,14 @@
                 id="home-tab-pane"
                 role="tabpanel"
                 aria-labelledby="home-tab"
-                tabindex="0"
-              >
+                tabindex="0">
                 <div class="p-3 rounded-bottom bg-white">
                   <div class="input-group">
                     <button
                       class="btn btn-light text-success dropdown-toggle border"
                       type="button"
                       data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                      aria-expanded="false">
                       <i class="fa-solid fa-house"></i> Filter
                     </button>
                     <ul class="dropdown-menu">
@@ -412,22 +396,17 @@
                         <a class="dropdown-item" href="#">Action before</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Another action before</a
-                        >
+                        <a class="dropdown-item" href="#">Another action before</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
+                        <a class="dropdown-item" href="#">Something else here</a>
                       </li>
                     </ul>
                     <button
                       class="btn btn-light text-success dropdown-toggle border"
                       type="button"
                       data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                      aria-expanded="false">
                       <i class="fa-solid fa-money-bill-wave"></i> Range harga
                     </button>
                     <ul class="dropdown-menu">
@@ -436,17 +415,14 @@
                         <a class="dropdown-item" href="#">Another action</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
+                        <a class="dropdown-item" href="#">Something else here</a>
                       </li>
                     </ul>
                     <input
                       type="text"
                       class="form-control"
                       aria-label="Text input with 2 dropdown buttons"
-                      placeholder="Cari berdasarkan kebutuhan"
-                    />
+                      placeholder="Cari berdasarkan kebutuhan">
                     <button class="btn btn-success border" type="button">
                       Button
                     </button>
@@ -458,8 +434,7 @@
                 id="profile-tab-pane"
                 role="tabpanel"
                 aria-labelledby="profile-tab"
-                tabindex="0"
-              >
+                tabindex="0">
                 <div class="p-3 rounded-bottom bg-white"></div>
               </div>
               <div
@@ -467,20 +442,20 @@
                 id="contact-tab-pane"
                 role="tabpanel"
                 aria-labelledby="contact-tab"
-                tabindex="0"
-              >
+                tabindex="0">
                 <div class="p-3 rounded-bottom bg-white"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- EndSearch Section -->
 
+      <!-- Hero Section -->
       <section
         id="services"
         class="px-5 min-vh-100"
-        style="background-color: #e2fdf1"
-      >
+        style="background-color: #e2fdf1">
         <div class="container">
           <div class="row text-center mb-3">
             <div class="col">
@@ -491,21 +466,17 @@
             <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
-                style="width: 13rem; border-radius: 2rem"
-              >
+                style="width: 13rem; border-radius: 2rem">
                 <div
                   class="card-body position-relative text-white text-center"
-                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem"
-                >
+                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem">
                   <div
                     class="rounded-circle bg-danger position-absolute overflow-hidden"
                     style="
                       width: 10rem;
                       height: 10rem;
                       top: -5rem;
-                      left: 1.5rem;
-                    "
-                  >
+                      left: 1.5rem;">
                     <img src="https://source.unsplash.com/random" alt="" />
                   </div>
                   <h4>Lorem, ipsum.</h4>
@@ -522,21 +493,17 @@
             <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
-                style="width: 13rem; border-radius: 2rem"
-              >
+                style="width: 13rem; border-radius: 2rem">
                 <div
                   class="card-body position-relative text-white text-center"
-                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem"
-                >
+                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem">
                   <div
                     class="rounded-circle bg-danger position-absolute overflow-hidden"
                     style="
                       width: 10rem;
                       height: 10rem;
                       top: -5rem;
-                      left: 1.5rem;
-                    "
-                  >
+                      left: 1.5rem;">
                     <img src="https://source.unsplash.com/random" alt="" />
                   </div>
                   <h4>Lorem, ipsum.</h4>
@@ -553,21 +520,17 @@
             <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
-                style="width: 13rem; border-radius: 2rem"
-              >
+                style="width: 13rem; border-radius: 2rem">
                 <div
                   class="card-body position-relative text-white text-center"
-                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem"
-                >
+                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem">
                   <div
                     class="rounded-circle bg-danger position-absolute overflow-hidden"
                     style="
                       width: 10rem;
                       height: 10rem;
                       top: -5rem;
-                      left: 1.5rem;
-                    "
-                  >
+                      left: 1.5rem;">
                     <img src="https://source.unsplash.com/random" alt="" />
                   </div>
                   <h4>Lorem, ipsum.</h4>
@@ -584,21 +547,17 @@
             <div class="col-lg-3 m-testimoni-card">
               <div
                 class="card bg-success m-auto"
-                style="width: 13rem; border-radius: 2rem"
-              >
+                style="width: 13rem; border-radius: 2rem">
                 <div
                   class="card-body position-relative text-white text-center"
-                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem"
-                >
+                  style="padding: 0.5rem; padding-top: 5.5rem; height: 20rem">
                   <div
                     class="rounded-circle bg-danger position-absolute overflow-hidden"
                     style="
                       width: 10rem;
                       height: 10rem;
                       top: -5rem;
-                      left: 1.5rem;
-                    "
-                  >
+                      left: 1.5rem;">
                     <img src="https://source.unsplash.com/random" alt="" />
                   </div>
                   <h4>Lorem, ipsum.</h4>
@@ -615,15 +574,18 @@
           </div>
         </div>
       </section>
+      <!-- EndHero Section -->
 
+      <!-- Fitur Section -->
       <section class="px-5" id="feature" style="background-color: #e2fdf1">
         <div class="container">
           <div class="row justify-content-between mb-3">
             <div class="col-lg-4"><h1>Fitur Layanan</h1></div>
             <div class="col-lg-3 text-lg-end">
-              <a href="#" class="btn btn-success px-3"
-                >Lihat Semua <i class="fa-solid fa-chevron-right"></i
-              ></a>
+              <a href="#" class="btn btn-success px-3">
+                Lihat Semua
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
             </div>
           </div>
           <div class="row">
@@ -631,8 +593,7 @@
               <div
                 id="carouselExampleAutoplaying"
                 class="carousel slide"
-                data-bs-ride="carousel"
-              >
+                data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
@@ -641,8 +602,7 @@
                           <img
                             class="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-                          />
+                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
                           <div class="card-body">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">
@@ -657,8 +617,7 @@
                           <img
                             class="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
-                          />
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
                           <div class="card-body">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">
@@ -673,60 +632,7 @@
                           <img
                             class="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
-                          />
-                          <div class="card-body">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row">
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
-                          />
-                          <div class="card-body">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-                          />
-                          <div class="card-body">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-4 mb-3">
-                        <div class="card">
-                          <img
-                            class="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
-                          />
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                           <div class="card-body">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">
@@ -745,8 +651,7 @@
                           <img
                             class="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
-                          />
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
                           <div class="card-body">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">
@@ -761,8 +666,7 @@
                           <img
                             class="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
-                          />
+                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
                           <div class="card-body">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">
@@ -777,8 +681,56 @@
                           <img
                             class="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
-                          />
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                           <div class="card-body">
                             <h4 class="card-title">Special title treatment</h4>
                             <p class="card-text">
@@ -795,16 +747,14 @@
                   class="carousel-control-prev display-1"
                   type="button"
                   data-bs-target="#carouselExampleAutoplaying"
-                  data-bs-slide="prev"
-                >
+                  data-bs-slide="prev">
                   <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button
                   class="carousel-control-next display-1"
                   type="button"
                   data-bs-target="#carouselExampleAutoplaying"
-                  data-bs-slide="next"
-                >
+                  data-bs-slide="next">
                   <i class="fa-solid fa-chevron-right"></i>
                 </button>
               </div>
@@ -812,23 +762,21 @@
           </div>
         </div>
       </section>
+      <!-- EndFitur Section -->
 
+      <!-- Konsultasi Section -->
       <section
         id="contact"
         class="bg-secondary"
         style="
           background-image: url('img/twinTower.jpg');
           background-size: cover;
-          background-repeat: no-repeat;
-        "
-      >
+          background-repeat: no-repeat;">
         <div
           style="
             background-color: #000000d0;
             padding-top: 5rem;
-            padding-bottom: 2rem;
-          "
-        >
+            padding-bottom: 2rem;">
           <div class="container">
             <div class="row align-items-center text-white">
               <div class="col-lg-6 mb-3">
@@ -881,13 +829,11 @@
                   <input
                     class="form-feedback"
                     type="text"
-                    placeholder="Masukkan email anda disini..."
-                  />
+                    placeholder="Masukkan email anda disini...">
                   <input
                     class="form-feedback"
                     type="text"
-                    placeholder="Pertanyaan anda..."
-                  />
+                    placeholder="Pertanyaan anda...">
                   <button type="submit" class="btn-feedback">Kirim</button>
                 </form>
               </div>
@@ -895,20 +841,23 @@
           </div>
         </div>
       </section>
+      <!-- EndKonsultasi Section -->
 
+      <!-- Footer Section -->
       <footer class="text-center pt-2 pb-4 bg-black">
-        <small class="text-white"
-          >Copyright &copy; 2023
-          <a class="text-white" href="https://pusbis.uinsa.ac.id"
-            >Pusbis UINSA</a
-          >. All Right Reserved.</small
-        >
+        <small class="text-white">Copyright &copy; 2023
+          <a class="text-white" href="https://pusbis.uinsa.ac.id">Pusbis UINSA</a>. All Right Reserved.</small>
       </footer>
+      <!-- EndFooter Section -->
     </main>
+    <!-- EndMain Section -->
+
+    <!-- Javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
+    
   </body>
 </html>
